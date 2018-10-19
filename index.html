@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HSK LEVEL 1 GAME</title>
+	<style type="text/css">
+	    @font-face{
+	    	font-family: myFont;
+            src: url(fonts/chargen.ttf);
+	    }
+	    .block{
+	    	margin: 0px auto;
+	    	border: 1px solid;
+	    	width: 840px;
+	    	height: 584px;
+	    }
+		.container{
+			
+			border: 1px solid;
+			width:400px;
+			height:480px;
+			position:absolute;
+			overflow:hidden;
+			/*background: blue;*/
+			/*background-image:url(fon1.jpg);*/
+		}
+		span{
+			
+			background: #eee;
+			color:#000;
+			position: inherit;
+			top: 0px;
+			font-weight: bolder;
+			visibility: visible;
+			font-size: 45px;
+            font-family: myFont;
+
+		}
+		.translate{
+			width: 400px;
+			height: 200px;
+			float: right;
+			margin-right:10px;
+
+			
+			
+		}
+		.cell {
+		  background-color: green;
+		  border-bottom: 1px solid white;
+		  border-left: 1px solid white;
+		  box-sizing: border-box;
+		  color:#fff;
+          text-align: center;
+          line-height: 100px;
+		  font-size: 30px;
+		  float: left;
+		  height: 100px;
+		  width: 200px;
+		}
+		.cell:hover{
+			cursor: pointer;
+		}
+		.point{
+			border: 1px solid;
+			width: 50px;
+			height: 50px;
+			font-size: 30px;
+			font-family: myFont;
+			text-align: center;
+			line-height: 50px;
+			margin-top: 520px;
+		    float: left;
+		}
+		.erR{
+			border: 1px solid black;
+			width: 50px;
+			height: 50px;
+			color:red;
+			font-size: 30px;
+			font-family: myFont;
+			text-align: center;
+			line-height: 50px;
+		    margin-top: 520px;
+		    margin-left: 80px;
+		}
+	</style>
+</head>
+<body>
+    <div class="block">
+    	<div class="container"></div>
+		
+		<div class="translate">
+			<div id="id0" class="cell" ></div>
+			<div id="id1" class="cell" ></div>
+			<div id="id2" class="cell" ></div>
+			<div id="id3" class="cell" ></div>
+		</div>
+		<div class="point"></div>
+		<div class="erR"></div>
+	</div>
+	
+
+	<script src="test.js"></script>
+
+</body>
+</html>
